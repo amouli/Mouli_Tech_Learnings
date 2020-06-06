@@ -1,7 +1,46 @@
+
 <!doctype html>
 <html lang="en">
 
 <head>
+<script language=JavaScript>
+<!--
+
+//Disable right mouse click Script
+//By Geek Site.in
+
+
+var message="Function Disabled!";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+// --> 
+</script>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -241,10 +280,9 @@
       <footer>
         <div id="footer">
           <p>Follow us</p>
-          <img src="images/icons8-facebook-circled-60.png">
-          <img src="images/icons8-google-plus-60.png">
-          <img src="images/icons8-instagram-60.png">
-          <img src="images/icons8-twitter-60.png">
+            <a href="https://www.facebook.com/mouli.ambati"><img src="images/icons8-facebook-circled-60.png"></a>
+          <a href="https://www.instagram.com/mouli.ambati/"><img src="images/icons8-instagram-60.png"></a>
+         <a href=" https://www.linkedin.com/in/mouli-ammati-733152b4/"><img src="images/icons8-linkedin-circled-60.png"></a>
         </div>
         <div class="footer-copyright py-3 text-center">
           &copy 2020 Copyright:
