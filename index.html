@@ -3,6 +3,45 @@
 <html lang="en">
 
 <head>
+<!-- <script language=JavaScript> -->
+  <script type="text/javascript">
+<!--
+
+//Disable right mouse click Script
+//By Geek Site.in
+
+
+var message="Function Disabled!";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+// --> 
+</script>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -40,13 +79,13 @@
                   <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">about</a>
+                  <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#service">service</a>
+                  <a class="nav-link" href="#service">Service</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#contact">contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item">
                   <img class="nav-link" id="sbtn" src="images/icons8-search-30.png">
@@ -66,7 +105,7 @@
     <div id="logo">
       <div id="logo-box">
 
-        <p>MULESOFT</p>
+        <p><font color="black">Mouli_Tech_Learnings</font></p>
         <input type="email" placeholder="ENTER YOUR EMAIL">
         <button class="btn"><a href="mailto: mouliambati1994@gmail.com">SUBSCRIBE</a></button>
 
@@ -81,7 +120,7 @@
       <div id="line">
         <div class="card-deck">
           <div class="card">
-            <img class="card-img-top" id="pic" src="images/image5.JPG" alt="Card image cap">
+            <img class="card-img-top" id="pic" src="images/image5.jpg" alt="Mouli">
             <div class="card-body">
               <h5 class="card-title">DESIGNER</h5>
               <blockquote class="blockquote mb-0">
@@ -92,24 +131,24 @@
 
           </div>
           <div class="card">
-            <img class="card-img-top" id="pic" src="images/mulesoft.JPG" alt="Card image cap">
+            <img class="card-img-top" id="pic" src="images/mulesoft.jpg" alt="Mulesoft">
             <div class="card-body">
               <h5 class="card-title">MULESOFT</h5>
               <blockquote class="blockquote mb-0">
                 <p></p>
-                <footer class="blockquote-footer">Integration Technology Videos<cite title="Source Title"></cite>
+                <footer class="blockquote-footer"><a href="https://www.youtube.com/channel/UCnuMfKYWkZ8vSlgO6H_OCJA/videos">Visit My Youtube Channel for videos.</a><cite title="Source Title"></cite>
                 </footer>
               </blockquote>
             </div>
 
           </div>
           <div class="card">
-            <img class="card-img-top" id="pic" src="images/blogger.JPG" alt="Card image cap">
+            <img class="card-img-top" id="pic" src="images/blogger.jpg" alt="Blogger">
             <div class="card-body">
               <h5 class="card-title">Blogger</h5>
               <blockquote class="blockquote mb-0">
                 <p></p>
-                <footer class="blockquote-footer">Blogger Content<cite title="Source Title"></cite></footer>
+                <footer class="blockquote-footer"> <a href="https://mouliambati1994.blogspot.com/">Visit My Blog for more.Go through the provided Link. </a><cite title="Source Title"></cite></footer>
               </blockquote>
             </div>
 
@@ -131,7 +170,9 @@
           <p><b>Here I am providing Mulesoft Videos and Blogger Contents which is more useful for the freshers. </p>
           <div><iframe width="650" height="450" src="https://www.youtube.com/embed/BGkLNEl7WxI" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+          </div><br><br>
+         
+
         </div>
         <div id="line" class="col-md-6">
           <!-- <div><iframe width="200" height="200" align="center" src ="https://mouliambati1994.blogspot.com/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe></div>
@@ -139,24 +180,17 @@
          
   <p><b></p>
     <div style="margin-top: 40px;">
-      <iframe   width="650" height="450" src="https://mouliambati1994.blogspot.com/" frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-           
+     <iframe   width="650" height="450" src="https://mouliambati1994.blogspot.com/" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+    </div><br><br>
+            
+        
          
         </div>
+        
       </div>
 
-
-
-
-
-      <br>
      
-      
-        <a href="https://www.youtube.com/channel/UCnuMfKYWkZ8vSlgO6H_OCJA/videos">Visit My Youtube Channel for more videos. Go through the provided Link. </a>
-      </div>
-
     </div>
     <!--end of service-->
 
@@ -247,32 +281,18 @@
       <footer>
         <div id="footer">
           <p>Follow us</p>
-          <img src="images/icons8-facebook-circled-60.png">
-          <img src="images/icons8-google-plus-60.png">
-          <img src="images/icons8-instagram-60.png">
+            <a href="https://www.facebook.com/mouli.ambati"><img src="images/icons8-facebook-circled-60.png"></a>
+          <a href="https://www.instagram.com/mouli.ambati/"><img src="images/icons8-instagram-60.png"></a>
           <img src="images/icons8-twitter-60.png">
         </div>
         <div class="footer-copyright py-3 text-center">
-          &copy 2019 Copyright:
+          &copy 2020 Copyright:
           <a href="mouliambati1994@gmail.com">MOULI AMBATI</a>
         </div>
       </footer>
     </div>
     <!--end of footer-->
-    <!-- Optional JavaScript -->
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-      crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+ 
 </body>
 
 </html>
